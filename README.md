@@ -7,9 +7,9 @@ b. При отправке формы если валидация пройден
 
 c. Код для обработки запроса формы должен выглядеть так:
 
-$success = false;
-\n if (! empty($_POST)) {
-try {
+$success = false;  
+if (! empty($_POST)) {  
+try {  
 $success = (new UserFormValidator())->validate($_POST);
 } catch (\Exception $e) {
 $error = $e->getMessage();
