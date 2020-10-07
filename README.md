@@ -9,6 +9,7 @@
 
 #### c. Код для обработки запроса формы должен выглядеть так:
 
+```
 $success = false;  
 if (! empty($_POST)) {  
   try {  
@@ -17,6 +18,7 @@ if (! empty($_POST)) {
     $error = $e->getMessage();  
   }  
 }
+```
 
 #### d. Создайте класс UserFormValidator - реализуйте метод validate.
 
